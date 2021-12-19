@@ -1,0 +1,92 @@
+/* Colors */
+/* Typography */
+@font-face {
+  font-family: 'Outfit';
+  src: url(Outfit-VariableFont_wght.ttf); }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background-color: #0d192b; }
+
+.card {
+  max-width: 22rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: #14253d;
+  box-shadow: 0rem 0rem 2rem 0.5rem #0d192b; }
+  .card__img {
+    position: relative; }
+    .card__img:hover > .overlay {
+      opacity: 1; }
+    .card__img img {
+      border-radius: 1rem;
+      max-width: 100%; }
+  .card .overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 1rem;
+    background-color: rgba(0, 255, 247, 0.5);
+    display: grid;
+    place-items: center;
+    transition: opacity .3s; }
+  .card__title {
+    margin: 1rem 0;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600; }
+    .card__title:hover {
+      color: #00fff7; }
+  .card__text {
+    color: #8bacda;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300; }
+  .card__counts {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0; }
+  .card .count {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; }
+  .card__eth-count {
+    color: #00fff7;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400; }
+  .card__time-count {
+    color: #8bacda; }
+  .card__divider {
+    border: none;
+    height: 1px;
+    background-color: #2f415b; }
+  .card__profile {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem; }
+    .card__profile img {
+      max-width: 3rem;
+      border: 2px solid white;
+      border-radius: 50%; }
+    .card__profile h3 {
+      color: #8bacda;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300; }
+    .card__profile .name {
+      color: white; }
+      .card__profile .name:hover {
+        color: #00fff7; }
+
+.pointer {
+  cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */
